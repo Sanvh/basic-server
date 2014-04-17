@@ -1,0 +1,31 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<polymer-element name="pet-maker">
+    <template>
+
+      <p>
+        This is the great <strong>{{pet1}}</strong>. 
+        It is way more awesome than <strong>{{pet2}}</strong>.
+      
+      </p>
+      <input id="nameInput" value="{{pet1}}"
+           placeholder="pet1's name">
+      <input id="nameInput2" value="{{pet2}}"
+           placeholder="pet2's name">
+
+
+    </template>
+
+      <script>
+
+        Polymer('pet-maker', {
+        pet1: "",
+        pet2: ""
+
+      });
+
+
+      </script>
+
+    
+    </polymer-element>
